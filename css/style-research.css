@@ -55,6 +55,11 @@ h2 {
     position: relative;
 }
 
+.text-justify {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
 /* ==================================================
    语言切换器样式
    ================================================== */
@@ -192,10 +197,6 @@ h2 {
     height: auto;
     display: block;
     transition: transform 0.5s ease;
-}
-
-.research-image:hover img {
-    transform: scale(1.05);
 }
 
 .research-content h3 {

@@ -63,23 +63,41 @@
         <section class="research-section p-4 mb-5">
             <h2 class="text-center mb-4 pb-2 i18n" data-i18n="research">Research</h2>
             
-            <!-- 项目一 -->
-            <div class="row research-project align-items-center mb-5">
-                <div class="col-lg-6">
-                    <div class="research-content">
-                        <h3 class="i18n" data-i18n="project1_title"></h3>
-                        <p class="i18n" data-i18n="project1_desc"></p>
-                        <p class="i18n" data-i18n="project1_desc2"></p>
-                    </div>
+        <!-- 项目一 -->
+        <div class="row research-project align-items-center mb-5">
+            <div class="research-content">
+                    <h3 class="i18n" data-i18n="project1_title"></h3>
                 </div>
-                
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <div class="research-image overflow-hidden rounded shadow">
-                        <img src="images/project-ifr.jpg"
-                             alt="Sensory Information Flow" class="img-fluid w-100">
-                    </div>
+            <div class="col-lg-6">   
+                <div class = "research-content text-justify">
+                    <p class="i18n" data-i18n="project1_desc"></p>
+                </div>
+                <div class="research-video overflow-hidden">
+                    <video class="img-fluid w-50" controls>
+                        <source src="videos/maomao-video.MOV" type="video/mp4">
+                    </video>
+                </div>
+                <!-- 视频Caption -->
+                <div class="video-caption mt-2 text-justify">
+                    <small class="i18n text-muted" data-i18n="project1_video_caption"></small>
                 </div>
             </div>
+            
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class = "research-content text-justify">
+                    <p class="i18n" data-i18n="project1_desc2"></p>
+                </div>
+                <div class="research-image overflow-hidden rounded shadow">
+                    <img src="images/project-ifr.jpg"
+                        alt="Sensory Information Flow" class="img-fluid w-100">
+                </div>
+                <!-- 图片Caption -->
+                <div class="image-caption mt-2 text-justify">
+                    <small class="i18n text-muted" data-i18n="project1_image_caption"></small>
+                </div>
+            </div>
+
+        </div>
             
             <!-- 项目二 -->
             <div class="row research-project align-items-center mb-5">
@@ -121,11 +139,30 @@
                 research: "Research",
                 publications: "Publications",
                 project1_title: "Sensory Information Flow & Trophic Interaction Strength",
-                project1_desc: "Understanding how the information flow between species affects their interactions is the main topic of my PhD thesis. I investigate how sensory information shapes ecological networks and influences species coexistence in changing environments.",
-                project1_desc2: "My research integrates field observations with computational models to quantify information transfer pathways and their impact on ecosystem stability. This work provides insights into how sensory pollution affects ecological communities and offers strategies for biodiversity conservation.",
-                project2_title: "Predator-prey Size Ratio & Trophic Interactions Inferences",
-                project2_desc: "My research on trophic interaction inference focuses on developing novel methods to predict and analyze food web structures using limited observational data. This approach combines machine learning with ecological theory to reconstruct complex feeding networks.",
-                project2_desc2: "By integrating trait-based modeling and network analysis, I aim to uncover hidden patterns in trophic interactions and predict how these networks respond to environmental changes such as climate change and habitat fragmentation."
+                project1_desc: `Beyond the flow of energy and matter, the flow of information—specifically, 
+                                the exchange of sensory information among species and with their environment—is another 
+                                important driver of ecosystem dynamics. Living organisms rarely make uninformed decisions, 
+                                particularly those pertaining to their survival and reproduction. Therefore, integrating the 
+                                dimension of sensory - information flow - into food-web modelling is essential for a comprehensive 
+                                understanding of species interactions, including their nature and strength.`,
+                project1_desc2:`As part of my PhD research, I developed a sensory information-constrained functional response framework 
+                                (IFR), which mechanistically models how the uncertainty in prey detection and identification, dependent 
+                                on sensory information availability, shapes predator-prey interactions.`,
+                project2_title: "Predator-prey Size Ratio & Trophic Interaction Inferences",
+                project2_desc: `My research on trophic interaction inference focuses on developing novel methods to 
+                                predict and analyze food web structures using limited observational data. This approach 
+                                combines machine learning with ecological theory to reconstruct complex feeding networks.`,
+                project2_desc2: `By integrating trait-based modeling and network analysis, I aim to uncover hidden patterns 
+                                in trophic interactions and predict how these networks respond to environmental changes such 
+                                as climate change and habitat fragmentation.`,
+                project1_video_caption: `My friend's hairy pufferfish (<i>Pao baileyi</i>) shows its sensory 
+                                        information-constrained process of preying on a crawfish, which includes: 
+                                        signal detection, prey identification, target tracking, attack, and 
+                                        finally consumption.`,
+                project1_image_caption:`The shape and parameters of a predator's functional response are influenced by 
+                                        the level of environmental background noise, including acoustic (e.g., boat engines), 
+                                        vibrational (e.g., transportation), visual (e.g., turbidity), and chemical (e.g., masking) 
+                                        disturbances.`
             },
             zh: {
                 name: "李菁祎",
@@ -134,13 +171,22 @@
                 cv: "个人简历",
                 research: "研究",
                 publications: "出版物",
-                project1_title: "感官信息流和营养相互作用强度",
-                project1_desc: "理解物种间信息流如何影响它们的相互作用是我博士论文的主要课题。我研究感官信息如何塑造生态网络，并在变化的环境中影响物种共存。",
-                project1_desc2: "我的研究结合实地观察和计算模型，量化信息传递路径及其对生态系统稳定性的影响。这项工作揭示了感官污染如何影响生态群落，并为生物多样性保护提供了策略。",
+                project1_title: "感官信息流与营养相互作用强度",
+                project1_desc: `物种间以及物种与环境间的感官信息交换所形成的“信息流”是与“能量流”和“物质流”同等重要的三大生态系统功能，
+                以及驱动生态系统动态变化的重要因素。自然界中的生物体几乎不会做出无依据的决策，尤其是在关乎生存与繁殖的事项上。
+                因此，将感官信息流纳入食物网建模，对于全面理解物种间相互作用的本质与强度至关重要。`,
+                project1_desc2:`在我的博士研究中，我开发了一种感官信息约束型功能反应框架（IFR）。我从捕食者的觅食序列入手，通过
+                考虑捕食者在探测与识别猎物的过程中的不确定性（取决于感官信息的可用性），IFR不仅可以在理论模型中
+                如何塑造捕食者与猎物的相互作用。`,
                 project2_title: "捕食者-猎物体型大小比与营养相互作用推断",
                 project2_desc: "我的营养级相互作用推断研究专注于开发新方法，利用有限的观测数据预测和分析食物网结构。这种方法将机器学习与生态理论相结合，重建复杂的摄食网络。",
-                project2_desc2: "通过整合基于特征的建模和网络分析，我旨在揭示营养级相互作用中的隐藏模式，并预测这些网络如何响应气候变化和栖息地破碎化等环境变化。"
+                project2_desc2: "通过整合基于特征的建模和网络分析，我旨在揭示营养级相互作用中的隐藏模式，并预测这些网络如何响应气候变化和栖息地破碎化等环境变化。",
+                project1_video_caption: `我朋友饲养的毛毛狗头（一种河豚，<i>Pao bailey</i>）展示了它受感官信息约束的捕食小龙虾的过程，
+                具体包括了：信号探测、猎物识别、目标追踪、发起攻击和摄食。`,
+                project1_image_caption: `捕食者功能反应曲线的形态和参数受到环境背景噪声水平的影响。环境背景噪声包括但不限于：听觉（如船舶引擎声）、
+                振动（如交通运输）、视觉（如水体浊度）及化学（如气味遮蔽）等各类干扰因素。`
             }
+
         };
         
         // 当前语言
